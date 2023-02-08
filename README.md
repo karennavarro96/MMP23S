@@ -1,6 +1,6 @@
 #### MMP23S, Math Methods in Phys. |||, Spring2 2023
 
-**Name**: *Karen Navarro*
+**Name**: *Karen E  Navarro*
 **School ID**: 1001856461
 **Email**: ken6461@mavs.uta.edu
 **Department**: Department of Physics
