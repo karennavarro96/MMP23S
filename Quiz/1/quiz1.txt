@@ -1,0 +1,109 @@
+1. Name the three generations of VCS. Briefly describe how each paradigm works and a problem that it resolves in the previous generation. 
+
+    The first generation is the Local VCS: this is done in the local storage of your computer.
+    The second generation is the centralized VCS: which involves the addition of other local environ    ments. 
+    The third generation is the distributed VCS: which allows connection between the other local sys    tems.
+
+2. Which VCS generation does git software belong to?
+    Git is a third generation, Distributed VCS.
+
+3. Which of the following Git commands can add all the new and modified-existing files to the staging area? choose all that apply.
+    (A), (D), (E), (F)
+
+4. Which of the following Git commands both stages and commits only modified and deleted files but NOT the new files added to the repository since the last commit. Choose all that apply.
+    (B), (C)
+
+5. Write down the Git command that lists all Git commands for you.
+    git help -a
+
+6. Write down the Git command that lists all branches for you.
+    git branch
+
+7. Write down the Git command that creates and checks out a new branch named dev from the current branch.
+    git checkout dev
+
+8. Perform the following tasks on a Git command-line on your computer and copy and paste the output to your quiz response file.
+
+    1. Initialize an empty project locally on your system in a temporary folder. Copy the command and the Git output here.
+
+    karennavarro@Karens-MacBook-Pro $ ls
+Exam		HW		Quiz		README.md
+karennavarro@Karens-MacBook-Pro $ git init temp
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/karennavarro/Documents/MM3/MMP23S/temp/.git/
+karennavarro@Karens-MacBook-Pro $ 
+
+    2. Add a README.md file to this project and add your name to it, save it and close it, then stage and commit it.
+    
+karennavarro@Karens-MacBook-Pro $ vim README.md
+karennavarro@Karens-MacBook-Pro $ git commit -a
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+karennavarro@Karens-MacBook-Pro $ git commit -m "Added name"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+karennavarro@Karens-MacBook-Pro $ git add -A
+karennavarro@Karens-MacBook-Pro $ git commit -m "Added name"
+[master (root-commit) 2e37232] Added name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+    3. Now create a new branch dev from the current branch and switch to it.
+
+karennavarro@Karens-MacBook-Pro $ git branch dev
+karennavarro@Karens-MacBook-Pro $ git checkout dev
+Switched to branch 'dev'
+karennavarro@Karens-MacBook-Pro $ git branch
+* dev
+  master
+    4. Modify the README.md file by removing your name. Then, stage and commit the changes to the new branch.
+
+karennavarro@Karens-MacBook-Pro $ vim README.md 
+karennavarro@Karens-MacBook-Pro $ git add -A
+karennavarro@Karens-MacBook-Pro $ git commit -m "Removed name"
+[dev b1a6e0f] Removed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+karennavarro@Karens-MacBook-Pro $
+
+5. Now merge this dev branch with your main branch and delete the new branch that you just created.
+
+    karennavarro@Karens-MacBook-Pro $ git branch -d dev
+Deleted branch dev (was b1a6e0f).
+karennavarro@Karens-MacBook-Pro $ 
+
+6. List all existing branches in your project.
+
+karennavarro@Karens-MacBook-Pro $ git branch -d dev
+Deleted branch dev (was b1a6e0f).
+karennavarro@Karens-MacBook-Pro $ git branch
+* master
+karennavarro@Karens-MacBook-Pro $ 
+
+9. Write down the Git command that lists all commits made to the project.
+    git status
+
+
+     
