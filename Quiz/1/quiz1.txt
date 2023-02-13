@@ -103,7 +103,8 @@ karennavarro@Karens-MacBook-Pro $ git branch
 karennavarro@Karens-MacBook-Pro $ 
 
 9. Write down the Git command that lists all commits made to the project.
-    git status
+    git log
+
 
 
      
