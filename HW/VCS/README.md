@@ -116,5 +116,7 @@ You may want to delete the .swp file now.
 
 
 
+#########
+I have had problems with trying to save vim files, there is some error with Visual Studio Code connecting. When saving files, it connects with VSCode and it tries to overide files. I was able to get it working on Monday but the issue still persists. The error over wrote some components of my answers on the vim README.md file. I was able to recover parts but not entirely. This is also why another file README.md.swp was made as well. When I tried to push it was not allowing me until --force due to different versions of the README.md file existed. I had to recover it but even then some items where deleted.
 
 
