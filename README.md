@@ -1,4 +1,4 @@
-#### MMP23S, Math Methods in Phys. |||, Spring2 2023
+#### MMP23S, Math Methods in Phys. |||, Spring 2023
 
 **Name**: *Karen E  Navarro*
 
